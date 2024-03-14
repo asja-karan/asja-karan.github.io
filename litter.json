@@ -1,0 +1,51 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "SAS litter",
+    "title": {
+  
+      "text": "UK beach litter - by company",
+  
+      "subtitle": "Share of litter found. Source: SAS 2021 Brand Audit.",
+  
+      "subtitleFontStyle":"italic",
+  
+      "subtitleFontSize":12,
+  
+      "anchor": "middle",
+  
+      "color": "hotpink"
+   },
+  
+    "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/chartENV17.csv"},
+    "mark":{
+  
+   
+  
+        "type": "bar",
+  
+        "color": "hotpink",
+  
+        "strokeWidth":2,
+  
+        "opacity":1
+  
+   
+  
+      },
+    "height": 600,
+    "width": 500,
+  
+    "encoding": {
+      "y": {"field": "Brand", "type": "ordinal", "sort":[], "title": null},
+  
+  
+  
+  
+      "x": {"field": "Value", "type": "quantitative", "title": null, "scale": {"domain": [0, 18]}}
+   
+  
+      }
+  
+  
+  }
+   
